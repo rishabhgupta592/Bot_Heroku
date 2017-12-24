@@ -1,0 +1,1 @@
+web: python ./Chatbot/chatrest.py 0.0.0.0:8080 --log-file=-
