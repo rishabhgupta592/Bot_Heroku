@@ -6,8 +6,8 @@ Created on 14 Nov 2017
 """
 
 
-ROOT = "D:/MyDoc/Project/airobotica/Source"
-
+# ROOT = "D:/MyDoc/Project/airobotica/Source"
+ROOT = "/app/Chatbot"
 LOGGER_FILE_NAME = "Bot.log"
 
 INPUT_PATH = ROOT + "/Data/"
