@@ -10,6 +10,7 @@ import logging
 import pandas as pd
 import random
 import string
+import random
 logger = logging.getLogger(__name__)
 
 if os.path.dirname(os.path.abspath(__file__)) not in sys.path:
@@ -19,10 +20,10 @@ from operations import tf_idf_handler
 import config as cfg
 
 
-def prepare_answer(answer, confidence, status_code):
+def prepare_answer(answer, confidence, status_code, response_type):
     json_data = {"Answer": answer,
                  "Confidence": round(confidence * 100, 2),
-                 "typeOfResponse": "text",
+                 "typeOfResponse": response_type,
                  "Suggestions": [],
                  'Status_code': status_code,
                  "Intent": "bank"
@@ -31,11 +32,14 @@ def prepare_answer(answer, confidence, status_code):
 
 
 def fetch_answer(data, max_index):
-    answer_frame = data.iloc[:, 2:]
-    # print answer_frame
-    print "$$$", max_index
-    print answer_frame.loc[max_index].dropna().values
-    return  answer_frame.loc[max_index].dropna().values.tolist()
+    answer_frame = data.iloc[:, 3:]
+    answer = answer_frame.loc[max_index].dropna().values.tolist()
+    response_type = data["Type"].loc[max_index]
+    response_type = response_type.lower()
+    if response_type == "random":
+        response_type = "text"
+        answer = [random.choice(answer)]
+    return answer, response_type
 
 
 def wrapper(query, user_name, company_name):
@@ -62,10 +66,10 @@ def wrapper(query, user_name, company_name):
         confidence = max_score
         # answer = data.Answer.get_value(max_index)
         status = cfg.SUCCESS_STATUS_CODE
-        print max_index
-        answer = fetch_answer(data, max_index)
+        answer, response_type = fetch_answer(data, max_index)
     else:
         answer = cfg.ANSWER_NOT_FOUND_MSG
         status = cfg.ANSWER_NOT_FOUND_CODE
         confidence = 0
-    return prepare_answer(answer, confidence, status)
+        response_type = "text"
+    return prepare_answer(answer, confidence, status, response_type)

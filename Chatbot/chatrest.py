@@ -53,7 +53,8 @@ class Bot:
             answer = cfg.ERROR_MSG
             confidence = 0
             status = 400
-            return conversation_engine.prepare_answer(answer, confidence, status)
+            response_type = "text"
+            return conversation_engine.prepare_answer(answer, confidence, status, response_type)
 
 if __name__ == "__main__":
 
