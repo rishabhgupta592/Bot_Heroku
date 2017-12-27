@@ -21,6 +21,8 @@ import config as cfg
 
 
 def prepare_answer(answer, confidence, status_code, response_type):
+    answer = [unicode(ans, errors='ignore') for ans in answer]
+    response_type = unicode(response_type, errors='ignore')
     json_data = {"Answer": answer,
                  "Confidence": round(confidence * 100, 2),
                  "typeOfResponse": response_type,
