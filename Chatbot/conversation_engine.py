@@ -44,15 +44,26 @@ def fetch_answer(data, max_index):
     return answer, response_type
 
 
-def wrapper(query, user_name, company_name):
+def button_response(button_text, company_name):
+    data_file = cfg.INPUT_PATH + company_name + ".csv"
+    data = pd.read_csv(data_file)
+    subset = data.loc[data['Intent'] == button_text]
+    que_list = subset['Que'].tolist()
+    que_list = random.sample(set(que_list), 3)
+    return que_list
+
+def wrapper(query, user_name, company_name, request_type):
     """ Main method which will work as handler"""
 
     # Data prepration of Query
     logger.info("Incoming query: %s", query)
+    if request_type.lower() == "button":
+        answer = button_response(query, company_name)
+        return prepare_answer(answer,1, 200, "button_response")
     if query == "getWelcomeMessage":
         wlc_msg = random.choice(cfg.WELCOME_MSG)
         wlc_msg = string.replace(wlc_msg, '[name]', user_name)
-        return prepare_answer(wlc_msg, 1, 200)
+        return prepare_answer([wlc_msg], 1, 200, "text")
     query = re.sub(r"[^A-Za-z0-9]", " ", query)
     query = query.lower().strip()
     ignore_stop_word_query = ["who are you", "how are you"]
@@ -60,9 +71,9 @@ def wrapper(query, user_name, company_name):
         prepared_query = ' '.join(dp.data_prep(query, company_name, check_spellings=False))
     else:
         if query == ignore_stop_word_query[0]:
-            return prepare_answer(["I am Chatbot, your virtual assistant."], 100, 200, "text")
+            return prepare_answer(["I am Chatbot, your virtual assistant."], 1, 200, "text")
         elif query == ignore_stop_word_query[1]:
-            return prepare_answer(["Thanks, am doing good."], 100, 200, "text")
+            return prepare_answer(["Thanks, am doing good."], 1, 200, "text")
 
     logger.info("Prepared query: %s", prepared_query)
     answer = tf_idf_handler.fetch_score(prepared_query, company_name)
