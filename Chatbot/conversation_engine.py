@@ -71,7 +71,7 @@ def wrapper(query, user_name, company_name, request_type):
         prepared_query = ' '.join(dp.data_prep(query, company_name, check_spellings=False))
     else:
         if query == ignore_stop_word_query[0]:
-            return prepare_answer(["I am Chatbot, your virtual assistant."], 1, 200, "text")
+            return prepare_answer(["I am Chatbot, your virtual assistant. Visit following \n http://airoboticatech.com/"], 1, 200, "text")
         elif query == ignore_stop_word_query[1]:
             return prepare_answer(["Thanks, am doing good."], 1, 200, "text")
 
