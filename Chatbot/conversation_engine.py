@@ -55,7 +55,15 @@ def wrapper(query, user_name, company_name):
         return prepare_answer(wlc_msg, 1, 200)
     query = query.lower().strip()
     query = re.sub(r"[^A-Za-z0-9]", " ", query)
-    prepared_query = ' '.join(dp.data_prep(query, company_name, check_spellings=False))
+    ignore_stop_word_query = ["who are you", "how are you"]
+    if query not in ignore_stop_word_query:
+        prepared_query = ' '.join(dp.data_prep(query, company_name, check_spellings=False))
+    else:
+        if query == ignore_stop_word_query[0]:
+            return prepare_answer(["I am Chatbot, your virtual assistance."], 100, 200, "text")
+        elif query == ignore_stop_word_query[1]:
+            return prepare_answer(["Thanks, am doing good."], 100, 200, "text")
+
     logger.info("Prepared query: %s", prepared_query)
     answer = tf_idf_handler.fetch_score(prepared_query, company_name)
 
