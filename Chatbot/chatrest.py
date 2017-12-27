@@ -50,7 +50,7 @@ class Bot:
         except Exception as e:
             logger.error("Error occurred: %s", e)
             logger.error(traceback.format_exc())
-            answer = cfg.ERROR_MSG
+            answer = [cfg.ERROR_MSG]
             confidence = 0
             status = 400
             response_type = "text"
