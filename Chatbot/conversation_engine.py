@@ -66,14 +66,16 @@ def wrapper(query, user_name, company_name, request_type):
         return prepare_answer([wlc_msg], 1, 200, "text")
     query = re.sub(r"[^A-Za-z0-9]", " ", query)
     query = query.lower().strip()
-    ignore_stop_word_query = ["who are you", "how are you"]
+    ignore_stop_word_query = ["who are you", "how are you", "about", "about you"]
     if query not in ignore_stop_word_query:
         prepared_query = ' '.join(dp.data_prep(query, company_name, check_spellings=False))
     else:
         if query == ignore_stop_word_query[0]:
-            return prepare_answer(["I am Chatbot, your virtual assistant. Visit following \n http://airoboticatech.com/"], 1, 200, "text")
+            return prepare_answer(["I am Chatbot, your virtual assistant."], 1, 200, "text")
         elif query == ignore_stop_word_query[1]:
             return prepare_answer(["Thanks, am doing good."], 1, 200, "text")
+        else:
+            return prepare_answer(["http://airoboticatech.com/"], 1, 200, "link")
 
     logger.info("Prepared query: %s", prepared_query)
     answer = tf_idf_handler.fetch_score(prepared_query, company_name)
