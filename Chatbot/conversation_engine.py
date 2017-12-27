@@ -70,7 +70,7 @@ def wrapper(query, user_name, company_name):
         status = cfg.SUCCESS_STATUS_CODE
         answer, response_type = fetch_answer(data, max_index)
     else:
-        answer = cfg.ANSWER_NOT_FOUND_MSG
+        answer = [cfg.ANSWER_NOT_FOUND_MSG]
         status = cfg.ANSWER_NOT_FOUND_CODE
         confidence = 0
         response_type = "text"
