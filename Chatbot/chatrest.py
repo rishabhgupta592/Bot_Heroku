@@ -39,7 +39,6 @@ class Bot:
             request_type = str(user_data.request_type)
             logger.info("Input params:: Query- %s :: Company- %s",query, company_name)
             logger.info("request_type- %s :: User- %s", request_type, user_name )
-            print query
             resp = conversation_engine.wrapper(query, user_name, company_name)
             result = json.loads(resp)
             logger.info("Response returned as follows :")

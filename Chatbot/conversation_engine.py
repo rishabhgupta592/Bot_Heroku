@@ -53,8 +53,8 @@ def wrapper(query, user_name, company_name):
         wlc_msg = random.choice(cfg.WELCOME_MSG)
         wlc_msg = string.replace(wlc_msg, '[name]', user_name)
         return prepare_answer(wlc_msg, 1, 200)
-    query = query.lower().strip()
     query = re.sub(r"[^A-Za-z0-9]", " ", query)
+    query = query.lower().strip()
     ignore_stop_word_query = ["who are you", "how are you"]
     if query not in ignore_stop_word_query:
         prepared_query = ' '.join(dp.data_prep(query, company_name, check_spellings=False))
