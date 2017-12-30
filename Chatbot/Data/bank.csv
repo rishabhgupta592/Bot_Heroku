@@ -1,4 +1,25 @@
 Que,Intent,Type,Answer,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Tell me about accounts,Account,Button,Current Accounts,Deposits,Savings Account,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Type of accounts,Account,Button,Current Accounts,Deposits,Savings Account,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+How many type of accounts,Account,Button,Current Accounts,Deposits,Savings Account,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Account,Account,Button,Current Accounts,Deposits,Savings Account,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Bank Accounts,Account,Button,Current Accounts,Deposits,Savings Account,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+What are the documents required for opening a Current Account of a sole proprietorship firm?,Current Accounts,Text,Following documents are required to open a Current Account of a sole proprietorship entity:,Proof of existence in the name of firm,Proof of address in the name of firm,KYC of the proprietor,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Can I transfer my Current Account from one branch to another?,Current Accounts,Text,"Yes, Current Accounts can be transferred from one branch to another. However, there are certain restrictions. Please visit your nearest branch for details.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+What are the documents required for opening Current Account of a company?,Current Accounts,Text,Following documents are required for opening Current Account of Private Limited Companies:,Memorandum of Association (MOA),Articles of Association (AOA),Certificate of Incorporation,Latest list of directors duly signed by any Director/Company Secretary /Authorised Signatory, Board Resolution (BR) duly signed by the directors of the company.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+What are the documents required for opening Current Account?,Current Accounts,Text,Following documents are required for opening Current Account of Private Limited Companies:,Memorandum of Association (MOA),Articles of Association (AOA),Certificate of Incorporation,Latest list of directors duly signed by any Director/Company Secretary /Authorised Signatory, Board Resolution (BR) duly signed by the directors of the company.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Current Accounts,Current Accounts,Text,"an account with a bank or building society from which money may be withdrawn without notice, typically an active account catering for frequent deposits and withdrawals by cheque.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+What is Savings Account,Savings Account,Text,"A savings account is a deposit account held at a retail bank that pays interest but cannot be used directly as money in the narrow sense of a medium of exchange (for example, by writing a cheque). These accounts let customers set aside a portion of their liquid assets while earning a monetary return.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+What happens if I don't use my savings account for a very long time?,Savings Account,Text,"The account becomes dormant if there are no customer initiated transactions (excludes system generated transactions like credit interest, debit interest), in the account for a continuous period of two years.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+What is the procedure to add/modify or delete a nominee for all my accounts and deposits,Savings Account,Text,We request you to follow the steps mentioned below to add/modify or delete a nominee:,Step 1) Get an application form from a branch or downloaded a form from the website,Step 2) Fill the application form duly signed by all the holders and submit it to your nearest branch. The branch will assist you after the form has been submitted by you.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+What is the frequency of interest payout for a Savings Account?,Savings Account,Text,Interest earned on your Savings Account balance shall be credited to your account on Quarterly basis.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Is there a minimum opening balance for a savings account?,Savings Account,Text,"The minimum opening balance for a savings account differs from bank to bank and depends on the features and services once would like to avail at the time of opening an account. Normally, it ranges between Rs 0 and Rs 25, 000 for regular customers and may go up to Rs. 2,00,000 or even higher for premium customers.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Do I need to pay any penalty on premature closure of Fixed Deposits?,Deposits,Text,"As per the Terms & Conditions of Fixed Deposit Accounts of the bank, the penalty on premature closure of Fixed Deposits, including sweep-in and partial closures, has been fixed by the Bank at the rate of 1% of the fixed deposit interest rate. This is applicable with effect from 24th January, 2011.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Why is the principal amount and the fixed deposit maturity amount of my Fixed Deposit the same?,Deposits,Text,"When your Fixed Deposit is booked with the quarterly / monthly interest pay out option, the maturity amount is the same as the principal amount. The interest amount will be credited to your account at quarterly / monthly intervals.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+What is fixed deposit,Deposits,Text,"A fixed deposit (FD) is a financial instrument provided by banks or NBFCs which provides investors a higher rate of interest than a regular savings account, until the given maturity date. It may or may not require the creation of a separate account.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+What is Recurring deposit,Deposits,Text,Recurring Deposit is a special kind of Term Deposit offered by banks in India which help people with regular incomes to deposit a fixed amount every month into their Recurring Deposit account and earn interest at the rate applicable to Fixed Deposits.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Eligibility for Recurring Deposit,Deposits,Text,"Most Indian banks offer resident Indians and HUF (Hindu Undivided Families), the opportunity to open a RD with them. Some banks even have RD schemes for children and in this scenario minors are also eligible to apply with guardians to supervise their finances.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Loan against Recurring Deposit,Deposits,Text,"A loan or an overdraft, can be availed against the recurring deposit. An individual can avail a loan of up to 75 to 90% of the deposit amount, depending on the bank’s terms and conditions. This is a fruitful option, especially in case of emergency, as interest keeps getting credited and the loan is available at a lower interest rate, as compared to a personal loan.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 What security do I need to provide to obtain a Business loan?,Business Loan,Text,"To obtain the loan, there is absolutely no need to provide any security or collateral.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 What are the benefits of having a Current/Saving Account for my Business loan?,Business Loan,Text,"You get preferred Processing Fee, priority processing and simpler documentation if you have a Current/Saving Account with XYZ Bank. This is taken into account at the time of disbursal of the loan. You can pay through Standing Instructions to debit your XYZ Bank Account with the EMI amount.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 How long will it take for me to get a Business Loan?,Business Loan,Text,"Once you submit your application form and supporting documents, we shall give disbursal within 5* working days provided everything is in order. All loan approvals are at the sole discretion of the bank.
@@ -65,6 +86,7 @@ Step 1) Get an application form from a branch or downloaded a form from the webs
 Step 2) Fill the application form duly signed by all the holders and submit it to your nearest branch
 
 The branch will assist you after the form has been submitted by you.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Tell me about loans,Loans,Button,Business Loan,Car Loans,Educational Loan,Gold Loan,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 What are loans,Loans,Button,Business Loan,Car Loans,Educational Loan,Gold Loan,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Do I need to provide collateral to avail of an education loan (Education Loans For Indian Education)?,Education Loan,Text,"For loans up to Rs. 4 lakh - No collateral or Third Party Guarantee is required
 
@@ -91,34 +113,6 @@ Monthly out flow as low as Rs 1000 per lakh calculated basis indicative rate of 
 ",Gold Loan,Text,"Gold Loan are available for tenures starting from 6 months, up to 48 months.
 
 ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Insurance,Insurance,Button,Health and Accident Insurance,Home Insurance,Motor Insurance,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-What do you mean by exclusions under the Accidental Protection Plan - Hospital Cash?,Health and Accident Insurance,Text,Exclusions are situations or conditions where XYZ ERGO is not liable to pay the benefits to the insured person in the event of an accident.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Can I include my spouse in this the Accidental Protection Plan - Hospital Cash policy?,Health and Accident Insurance,Text,"Yes, you can include your spouse and up to 2 children in the policy.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-How do I make a Accidental Insurance claim?,Health and Accident Insurance,Text,"You can make a claim by calling our toll-free number 1800-226-226 (MTNL or BSNL) or 1800-2-700-700 (any line) or 022 6638 4800 (local/STD charges apply). We will then assist you with the submission of the documents required and the process will be completed within 7 working days, once all the required documents are submitted.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-"Who can be a beneficiary under the Accidental Protection Plan - Hospital Cash?
-",Health and Accident Insurance,Text,"A beneficiary can be any member of your family.
-
-",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-What will be the start date of my insurance policy?,Home Insurance,Text,"Your insurance cover starts from the commencement date indicated by you in the proposal form or receipt of the premium by us, whichever is later.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-"If I have a home insurance policy with two different companies, will I benefit from both?
-",Home Insurance,Text,"If you have a policy with two insurance companies, at the time of the claim both insurance companies will pay on a proportionate basis",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-"What are the documents required to be submitted in case of a home burglary claim?
-",Home Insurance,Text,"The original invoice has to be submitted, giving the value of the items stolen. In addition to this you also have to give the replacement cost/repair cost, FIR, Final police report and claim form.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-When is an FIR necessary in a Home Insurance claim?,Home Insurance,Text,"A police FIR is mandatory in the case of:
-Burglary
-Theft
-Malicious Damage
-Riot and Strike
-Terrorism",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-"Do I need to have Auto Insurance?
-",Motor Insurance,Text,"Yes, the Motor Vehicle Act states that every motor vehicle plying on the road has to be insured with a Liability Only policy at the very least.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-"What documents do I need to submit when buying Insurance for my vehicle?
-",Motor Insurance,Text,"All you need to submit is a signed proposal form, in certain cases you have to submit some additional documents, if required.
-
-",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Can I buy a Motor Insurance policy online?,Motor Insurance,Text,"Yes, you can purchase an XYZ ERGO Motor Insurance policy online by using your Credit Card or online bank account",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Can I pay the premium for my Auto Insurance in instalments?,Motor Insurance,Text,"No, the law (Insurance Act, 1938) does not permit us to accept your Auto Insurance premiums in instalments.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Can I renew my Motor policy online?,Motor Insurance,Text,"Yes, you can renew your XYZ ERGO Motor Insurance policy online by using your Credit Card or bank account.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Hi,Generic,Random,Hello,Hi !!! ,Hey ,How can I make your day better?,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Hello,Generic,Random,Hello,Hi !!! ,Hey ,How can I make your day better?,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Good,Generic,Text,That's good to hear :),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
