@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on 14 Nov 2017
 
-@author: Rishabh.gupta
-"""
 import os, json, sys
 import config as cfg
 import cPickle as pickle
