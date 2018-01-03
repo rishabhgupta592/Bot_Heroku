@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Mon Aug 01 14:51:10 2016
-
-@author: Gayatri.k, Sharda.sinha
-"""
 
 ###### Preprocessing functionalities #######
 
