@@ -1,5 +1,5 @@
 web.py==0.38
-nltk==3.2.4
+nltk
 dill
 gunicorn
 pandas
